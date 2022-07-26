@@ -18,9 +18,9 @@
     <main>
         <section class="skills">
             <div class="wrapper">
-                <h1>Skills</h1>
+                <h1 class="title">Skills</h1>
                 <div class="skills__blocks">
-                    <div class="blocks__technologies">
+                    <div class="blocks__technologies blocks__block">
                         <h3>Technologies</h3>
                         <div class="technologies__content">
                             <ul>
@@ -46,6 +46,7 @@
                                         <li>useState</li>
                                         <li>useEffect</li>
                                         <li>useContext</li>
+                                        <li>useRef</li>
                                     </ul>
                                     <ul>
                                         <li>React Router</li>
@@ -55,14 +56,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blocks__progLan">
+                    <div class="blocks__progLan blocks__block">
                         <h3>Programming languages</h3>
                         <ul>
                             <li>JavaScript</li>
                             <li>TypeScript</li>
                         </ul>
                     </div>
-                    <div class="blocks__english">
+                    <div class="blocks__english blocks__block">
                         <h3>English lvl</h3>
                         <ul>
                             <li>Upper Intermediate (B2+)</li>
@@ -71,26 +72,103 @@
                 </div>
             </div>
         </section>
-        <section class="projects wrapper">
-            <h1>Projects</h1>
-            <div>
-                <h3>Techflow</h3>
-            </div>
-        </section>
-        <section class="contact wrapper">
-            <div>
-                <h4>Email</h4>
-                <p>unjusodal@gmail.com</p>
-            </div>
-            <div>
-                <h4>Telegramm</h4>
-                <p>LINK</p>
-            </div>
-            <div>
-                <a href="#">GitHub</a>
+        <section class="projects">
+            <div class="wrapper">
+                <h1 class="title">Projects</h1>
+                <div class="projects__cards">
+                    <div class="cards__card">
+                        <h3>Techflow</h3>
+                        <div class="card__content">
+                            <b>Stack:</b>
+                            <p>Pug, SCSS, JavaScript, Gulp</p>
+                            <a href="https://github.com/unjusodal/Techflow" target="_blank">GitHub</a>
+                            <a href="https://tech-flow.netlify.app/" target="_blank">Live view</a>
+                        </div>
+                    </div>
+                    <div class="cards__card">
+                        <h3>Cowboy</h3>
+                        <div class="card__content">
+                            <b>Stack:</b>
+                            <p>SCSS, JavaScript, Gulp</p>
+                            <a href="https://github.com/unjusodal/cowboy" target="_blank">GitHub</a>
+                            <a href="https://c0wboy.netlify.app/" target="_blank">Live view</a>
+                        </div>
+                    </div>
+                    <div class="cards__card">
+                        <h3>EcoCabins</h3>
+                        <div class="card__content">
+                            <b>Stack:</b>
+                            <p>Pug, SCSS, JavaScript, Gulp</p>
+                            <a href="https://github.com/unjusodal/ecoCabins" target="_blank">GitHub</a>
+                            <a href="https://ecocab.netlify.app/" target="_blank">Live view</a>
+                        </div>
+                    </div>
+                    <div class="cards__card">
+                        <h3>Dream Home</h3>
+                        <div class="card__content">
+                            <b>Stack:</b>
+                            <p>React: useState, useEffect; SCSS</p>
+                            <a href="https://github.com/unjusodal/dream-home" target="_blank">GitHub</a>
+                            <a href="https://c0wboy.netlify.app/" target="_blank">Live view</a>
+                        </div>
+                    </div>
+                    <div class="cards__card">
+                        <h3>Travely</h3>
+                        <div class="card__content">
+                            <b>Stack:</b>
+                            <p>SCSS, JavaScript</p>
+                            <a href="https://github.com/unjusodal/travely" target="_blank">GitHub</a>
+                            <a href="https://travely.netlify.app/" target="_blank">Live view</a>
+                        </div>
+                    </div>
+                    <div class="cards__card">
+                        <h3>React Sneakers</h3>
+                        <div class="card__content">
+                            <b>Stack:</b>
+                            <p>React: useState, useEffect, useContext; SCSS Modules</p>
+                            <a href="https://github.com/unjusodal/react-sneakers" target="_blank">GitHub</a>
+                            <a href="https://c0wboy.netlify.app/" target="_blank">Live view</a>
+                        </div>
+                    </div>
+                    <div class="cards__card">
+                        <h3>To Do App</h3>
+                        <div class="card__content">
+                            <b>Stack:</b>
+                            <p>SCSS, JavaScript <br> (Has localStorage)</p>
+                            <a href="https://github.com/unjusodal/to-do-list" target="_blank">GitHub</a>
+                            <a href="https://unjusodal.github.io/to-do-list/" target="_blank">Live view</a>
+                        </div>
+                    </div>
+                    <div class="cards__card">
+                        <h3>?</h3>
+                        <div class="card__content">
+                            <b>Stack:</b>
+                            <b>No more projects yet :(</b>
+                            <p>...</p>
+                        </div>
+                    </div>
+                    <div class="cards__card">
+                        <h3>?</h3>
+                        <div class="card__content">
+                            <b>No more projects yet :(</b>
+                            <p>...</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer class="wrapper">
+        <div>
+            <h4>Email</h4>
+            <p>unjusodal@gmail.com</p>
+        </div>
+        <div>
+            <h4>Telegram</h4>
+            <p>@yaxckes</p>
+        </div>
+        <a href="https://github.com/unjusodal" target="_blank">GitHub</a>
+    </footer>
     <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
     <script src="/js/typeIt.js"></script>
     <!-- <script src="./js/main.min.js" type="text/javascript"></script> -->
