@@ -23,7 +23,7 @@ function styles() {
 }
 
 function scripts() {
-    return src('src/js/main.js')
+    return src('src/js/typeIt.js')
 
     .pipe(uglify())
     .pipe(concat('index.js'))
@@ -59,7 +59,7 @@ function liveServer() {
 function watching() {
     watch(['src/scss/**/*.scss'], styles)
     watch('src/index.html').on('change', browserSync.reload)
-    // watch(['src/js/main.js'], minifyJS)
+    watch(['src/js/*.js'], scripts)
 }
 
 function cleanDist() {
@@ -71,7 +71,7 @@ function build() {
         'src/index.html',
         'src/style.min.css',
         'src/index.js'
-    ], {base: 'src'})
+    ])
 
     .pipe(dest('dist'))
 }
@@ -82,4 +82,4 @@ exports.compressImgs = compressImgs
 
 exports.default = parallel(watching, liveServer)
 
-exports.build = series(cleanDist,compressImgs, build)
+exports.build = series(cleanDist, build)
