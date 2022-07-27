@@ -33,6 +33,10 @@ a {
     color: rgb(121, 121, 121);
 }
 
+.note {
+    font-size: 0.7rem;
+}
+
 @media (max-width: 305px) {
     .wrapper {
         padding: 50px 10px;
@@ -146,7 +150,13 @@ header {
 //PROJECTS SECTION/////////////////////////////////////////////////////////////////////////////
 
 .projects {
-    
+    h1 {
+        margin-bottom: 5px;
+    }
+
+    .note {
+        margin-bottom: 30px;
+    }
 }
 
 .projects__cards {
